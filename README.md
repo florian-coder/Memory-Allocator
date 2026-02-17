@@ -38,19 +38,20 @@ The allocator relies on Linux memory-management syscalls (`brk`/`sbrk`, `mmap`, 
     └── ... (helpers / macros)
 
 ```
-- `osmem.c` contains the allocator implementation.
-- `utils/osmem.h` defines the public API.
-- `utils/block_meta.h` defines the block metadata structure and related constants.
-- `utils/printf.c` provides a `printf()` implementation that does **not** use the heap (useful for debugging without allocator recursion).
+
+* `osmem.c` contains the allocator implementation.
+* `utils/osmem.h` defines the public API.
+* `utils/block_meta.h` defines the block metadata structure and related constants.
+* `utils/printf.c` provides a `printf()` implementation that does **not** use the heap (useful for debugging without allocator recursion).
 
 ---
 
 ## Requirements
 
-- Linux (x86_64 recommended)
-- GCC / Clang
-- `make`
-- Kernel support for `mmap/munmap` and `brk/sbrk`
+* Linux (x86_64 recommended)
+* GCC / Clang
+* `make`
+* Kernel support for `mmap/munmap` and `brk/sbrk`
 
 ---
 
@@ -60,10 +61,12 @@ From the project root directory:
 
 ```bash
 make
-Clean (optional, if the target exists in the Makefile):
 
+```
+
+To clean:
+
+```bash
 make clean
 
-
-
-
+```
