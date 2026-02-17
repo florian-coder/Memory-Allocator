@@ -24,17 +24,18 @@ The allocator relies on Linux memory-management syscalls (`brk`/`sbrk`, `mmap`, 
 
 ---
 
-## Project Structure
+# Project Structure
 
+```text
 .
 ├── Makefile
 ├── osmem.c
 ├── README.md
 └── utils/
-├── osmem.h
-├── block_meta.h
-├── printf.c (heap-free printf)
-└── ... (helpers / macros, if any)
+    ├── osmem.h
+    ├── block_meta.h
+    ├── printf.c (heap-free printf)
+    └── ... (helpers / macros)
 
 
 - `osmem.c` contains the allocator implementation.
@@ -62,5 +63,6 @@ make
 Clean (optional, if the target exists in the Makefile):
 
 make clean
+
 
 
