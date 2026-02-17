@@ -25,7 +25,7 @@ The allocator relies on Linux memory-management syscalls (`brk`/`sbrk`, `mmap`, 
 ---
 
 ## Project Structure
-
+.
 ├── Makefile
 ├── osmem.c
 ├── README.md
@@ -61,3 +61,4 @@ make
 Clean (optional, if the target exists in the Makefile):
 
 make clean
+
