@@ -1,4 +1,4 @@
-# Memory Allocator (libosmem)
+# Memory Allocator
 
 A minimal C library for manual virtual memory management, providing compact implementations of:
 - `os_malloc(size_t size)`
@@ -71,3 +71,4 @@ make clean
 
 ```
 ```
+
